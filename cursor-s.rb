@@ -11,11 +11,12 @@ class CursorS < Formula
       # 创建一个简单的启动脚本
       (bin/"cursor-s").write <<~EOS
         #!/bin/bash
-        cd #{prefix}/go-client && go run main.go "$@"
+        cd #{prefix}/cursor-auth-system/go-client && go run main.go "$@"
       EOS
 
       # 复制源代码到安装目录
-      (prefix/"go-client").install Dir["*"]
+      (prefix/"cursor-auth-system/go-client").mkpath
+      (prefix/"cursor-auth-system/go-client").install Dir["*"]
       chmod 0755, bin/"cursor-s"
     end
   end
