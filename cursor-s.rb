@@ -1,13 +1,13 @@
 class CursorS < Formula
   desc "Cursor Auth System Client"
-  homepage "https://github.com/LeaveC/cursor-auth-system"
-  head "https://github.com/LeaveC/cursor-auth-system.git", branch: "main"
+  homepage "https://github.com/LeaveC/cusor"
+  head "https://github.com/LeaveC/cusor.git", branch: "main"
   version "1.0.0"
 
   depends_on "go" => :build
 
   def install
-    cd "go-client" do
+    cd "cursor-auth-system/go-client" do
       # 创建一个简单的启动脚本
       (bin/"cursor-s").write <<~EOS
         #!/bin/bash
