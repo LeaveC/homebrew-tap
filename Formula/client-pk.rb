@@ -10,7 +10,7 @@ class ClientPk < Formula
     depends_on "python@3.11"
     
     resource "pyside6" do
-      url "https://files.pythonhosted.org/packages/py3/P/PySide6/PySide6-6.6.1-cp38-abi3-macosx_11_0_universal2.whl"
+      url "https://pypi.org/packages/cp38/P/PySide6/PySide6-6.6.1-cp38-abi3-macosx_11_0_universal2.whl"
       sha256 "3c348948fe3957b18164c9c7b8942fe065bdb39648b326f212bc114326679fa9"
     end
   
